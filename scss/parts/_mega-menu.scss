@@ -1,0 +1,26 @@
+/*----*****---- << Mega Menu Title With Background >> ----*****----*/
+#main-menu .menu-item-megamenu-parent.menu-title-with-bg .megamenu-child-container > ul.sub-menu > li > a, #main-menu .menu-item-megamenu-parent.menu-title-with-bg .megamenu-child-container > ul.sub-menu > li > .nolink-menu { padding:10px 15px; margin-bottom:10px;  }
+
+#main-menu .megamenu-child-container.menu-hasbg { background-color:#ffffff; background-position:right bottom; background-repeat:no-repeat; }
+
+/*----*****---- << Mega Menu Title With Border >> ----*****----*/
+#main-menu .menu-item-megamenu-parent.menu-title-with-border .megamenu-child-container > ul.sub-menu > li > a, #main-menu .menu-item-megamenu-parent.menu-title-with-border .megamenu-child-container > ul.sub-menu > li > .nolink-menu { padding-bottom:10px; }
+
+/*----*****---- << Mega Menu Links With Background >> ----*****----*/
+#main-menu .menu-item-megamenu-parent.menu-links-with-bg .megamenu-child-container ul.sub-menu > li > ul > li, #main-menu .menu-item-megamenu-parent.menu-links-with-border .megamenu-child-container ul.sub-menu > li > ul > li { width:100%; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-bg .megamenu-child-container ul.sub-menu > li > ul > li > a, #main-menu ul li.menu-item-simple-parent.menu-links-with-bg ul > li > a { padding:7px 12px; margin-bottom:7px;  float:left; width:100%; display:inline-block; }
+
+/*----*****---- << Mega Menu Links With Border >> ----*****----*/
+#main-menu .menu-item-megamenu-parent.menu-links-with-border .megamenu-child-container ul.sub-menu > li > ul > li > a, #main-menu ul li.menu-item-simple-parent.menu-links-with-border ul > li > a { padding-bottom:10px; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-border .megamenu-child-container ul.sub-menu > li > ul > li:last-child > a, #main-menu ul li.menu-item-simple-parent.menu-links-with-border ul > li:last-child > a { border:none !important; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-border .megamenu-child-container ul.sub-menu > li > ul > li > a {  float:left; width:100%; display:inline-block; } 
+
+/*----*****---- << Mega Menu Links With Arrow >> ----*****----*/
+#main-menu .menu-item-megamenu-parent.menu-links-with-arrow .megamenu-child-container ul.sub-menu > li > ul > li > a, #main-menu ul li.menu-item-simple-parent.menu-links-with-arrow ul > li > a { padding-left:15px; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-arrow .megamenu-child-container ul.sub-menu > li > ul > li > a:before, #main-menu ul li.menu-item-simple-parent.menu-links-with-arrow ul > li > a:before { position:absolute; left:0px; font-family:FontAwesome; font-size:14px; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-arrow.single .megamenu-child-container ul.sub-menu > li > ul > li > a:before, #main-menu ul li.menu-item-simple-parent.menu-links-with-arrow.single ul > li > a:before { content:"\f105"; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-arrow.double .megamenu-child-container ul.sub-menu > li > ul > li > a:before, #main-menu ul li.menu-item-simple-parent.menu-links-with-arrow.double ul > li > a:before { content:"\f101"; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-arrow.disc .megamenu-child-container ul.sub-menu > li > ul > li > a:before, #main-menu ul li.menu-item-simple-parent.menu-links-with-arrow.disc ul > li > a:before { content:"\f111"; font-size:8px; }	
+
+#main-menu .menu-item-megamenu-parent.menu-links-with-bg.menu-links-with-arrow .megamenu-child-container ul.sub-menu > li > ul > li > a, #main-menu ul li.menu-item-simple-parent.menu-links-with-bg.menu-links-with-arrow ul > li > a { padding-left:27px; }
+#main-menu .menu-item-megamenu-parent.menu-links-with-bg.menu-links-with-arrow .megamenu-child-container ul.sub-menu > li > ul > li > a:before, #main-menu ul li.menu-item-simple-parent.menu-links-with-bg.menu-links-with-arrow ul > li > a:before { left:12px; }

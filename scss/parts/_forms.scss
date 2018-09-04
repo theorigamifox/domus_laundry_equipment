@@ -1,0 +1,316 @@
+/*--------------------------------------------------------------
+1.9 - Forms
+--------------------------------------------------------------*/
+fieldset{ border:1px solid; padding:15px; margin:0 0 20px 0; }
+legend{ font-weight: bold; }
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, input[type="search"], select, textarea { font-size:13px; }
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="range"], input[type="date"], textarea, input.text, input[type="search"] { border:1px solid; padding:18px 12px 16px; display:block; margin:0px; width:100%;  -webkit-appearance:none; -webkit-border-radius:0px; } 
+
+textarea { height:190px; overflow:auto; resize:none; }
+.fashion-form textarea { height: 150px; }
+
+select { height:51px; border:1px solid; width:100%; margin:0px; padding:15px 50px 15px 15px; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; text-indent: 0.01px; text-overflow: ''; -webkit-border-radius:0px; }
+
+input[type="submit"], button, input[type="button"], input[type="reset"] { border:none; text-transform:uppercase; font-weight:bold; margin:10px 0px 0px; font-size:14px; padding:11px 20px; float:left; cursor:pointer; border-radius:3px; -webkit-appearance:none; }		
+.aligncenter input[type="submit"] { float:none; }
+
+/*----*****---- << Moz Reset >> --****--*/
+input[type="submit"]::-moz-focus-inner { border:0; padding:0; margin-top:-1px; margin-bottom:-1px; }
+
+#searchform { clear:both; }
+
+.selection-box { position:relative; clear:both; }
+.selection-box:before, .selection-box:after { content:""; pointer-events:none; position:absolute; }
+.selection-box:before { z-index:1; right:17px; top:5px; bottom:0px; height:0px; margin:auto; border-left:7px solid transparent; border-right:7px solid transparent; border-top:7px solid; }
+.selection-box:after { width:48px; height:calc(100% - 2px); right:0px; top:1px; border-left:1px solid; border-right:1px solid; }
+.selection-box select { margin-top:0px; }
+
+
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    opacity: 1 !important;
+}
+::-moz-placeholder { /* Firefox browsers */
+    opacity: 1;
+} 
+:-ms-input-placeholder {
+    opacity: 1;
+}
+input:-moz-placeholder {
+    opacity: 1;
+}
+/* Form fields, general styles first. */
+
+label {
+    font-family:$primaryfont;
+    font-size:14px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+button,
+input,
+textarea {
+    font: 400 17px $primaryfont;
+    padding: 11px 15px;
+    border: 0;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    font-size: 16px;
+    padding: 10px 14px;
+    background: $white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0;
+}
+/* Buttons */
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {}button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {}
+
+.button:hover,
+a.button-secondary,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus,
+#wp-submit:hover,
+#submitcomment:hover,
+#searchsubmit:hover,
+input[type="submit"]:hover {
+    border-color: $primarycolor;
+    background:$white;
+}
+label {
+    text-align: left;
+    display:inline-block;
+}
+form {
+    margin: 0;
+}
+//fieldset {
+//    border: 1px solid #c0c0c0;
+//    margin: 0 2px;
+//    padding: 0.35em 0.625em 0.75em;
+//}
+form{
+}
+fieldset{
+    border:0!important;
+}
+.gform_wrapper textarea.medium{
+    height:106px!important;
+}
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+}
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+button,
+input {
+    line-height: normal;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+    cursor: default;
+    opacity: 0.8;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    padding-right: 2px;
+    /* Don't cut off the webkit search cancel button */
+}
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100% !important;
+}
+.contact-form textarea {
+    height: 195px;
+}
+.two_third.last_column div {
+    width: 95%;
+    float: right;
+}
+.contact-submit {
+    margin-top: 20px;
+}
+.gform_fields {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.gfield {
+    margin: 0 0 20px;
+}
+.ginput_container {
+    margin: 0 0 8px;
+}
+.gfield_description {
+    font-size: 80%;
+    float: left;
+}
+.gfield_description.validation_message {
+    color: #df7c7b;
+    float: right;
+}
+
+/* BROWSERS */
+.gform_wrapper.gf_browser_chrome {
+    .gfield_checkbox, .gfield_radio {
+        li {
+            input, input[type=checkbox], input[type=radio] {
+                margin-top:0;
+            }
+        }
+    }
+}
+.gform_wrapper {
+    margin-bottom:50px!important;
+    ul.gform_fields {
+        li.gfield {
+            margin-bottom:15px;
+            .top_label .gfield_label {
+                display:none!important;
+            }
+            .ginput_container {
+                margin:0;
+            }
+        }
+    }
+    fieldset {
+        ul.gform_fields {
+            li.gfield {
+                float:left;
+                width:50%;
+                clear:none!important;
+                input[type=checkbox] {
+                    margin-top:0!important;
+                }
+                label {
+                    display:inline-block!important;
+                }
+                .gfield_label {
+                    display:none!important;
+                }                
+            }
+        }
+    }
+    input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="number"], textarea, select, input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+        border-radius: 0;
+        padding:15px!important;
+        @media #{$small-down} {
+            font-size:12px!important;
+        }
+    }
+    .top_label {
+        label, .gfield_label {
+            display:none!important;
+        }
+        .gfield_checkbox {
+            label {
+                display:inline-block;
+                color:$primarycolor;
+            }
+        }
+    }
+    .gform_footer {
+        margin-top:0!important;
+        padding-top:0!important;
+    }
+}
+@media screen and (max-width: 62.5em) {
+    .wpcf7-form {
+        input[type="email"], input[type="text"], input[type="button"], textarea {
+            font-size:85%;
+        }
+    }
+}
+@media screen and (max-width: 40em) {
+    .wpcf7-form {
+        input[type="email"], input[type="text"], input[type="button"], textarea {
+            font-size:80%;
+        }
+        input.wpcf7-submit{
+            float:none;
+            width:100%;
+            text-align:center;
+        }
+    }
+    .gform_wrapper {
+        .gform_footer {
+            margin-top:0;
+            padding-top:0;
+        }
+    }
+}

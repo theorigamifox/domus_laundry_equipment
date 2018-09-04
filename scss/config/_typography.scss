@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('../fonts/UniversLTStd-Light.woff2') format('woff2'),
+        url('../fonts/UniversLTStd-Light.woff') format('woff'),
+        url('../fonts/UniversLTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'core_mellow55_medium';
+    src: url('../fonts/core_mellow_55_medium-webfont.eot');
+    src: url('../fonts/core_mellow_55_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_mellow_55_medium-webfont.woff2') format('woff2'),
+         url('../fonts/core_mellow_55_medium-webfont.woff') format('woff'),
+         url('../fonts/core_mellow_55_medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primaryfont: 'Univers LT Std', Arial, sans-serif;
+$secondaryfont: 'core_mellow55_medium', Arial,sans-serif;

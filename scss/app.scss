@@ -1,0 +1,35 @@
+/* Global config */
+@import "config/colors"; // Your custom color scheme
+@import "config/mixins"; // Your custom color scheme
+@import "config/settings"; // Default settings file. Uncomment each setting you need to change
+@import "config/typography"; // Default settings file. Uncomment each setting you need to change
+
+
+/* Site structure */
+
+
+/* Assets */
+@import 'site/reset';
+@import 'site/style-editor';
+@import "site/structure"; // Your site structure
+@import 'site/navigation';
+@import 'site/header';
+@import 'site/footer';
+@import 'site/lime';
+@import 'site/home';
+@import 'site/contact';
+@import 'site/responsive';
+@import 'site/404';
+
+//@import 'plugins/slick';
+//@import 'plugins/prettyPhoto';
+
+@import 'parts/grid';
+@import 'parts/buttons';
+@import 'parts/forms';
+//@import 'parts/members';
+//@import 'parts/social';
+@import 'parts/widget';
+@import 'parts/visual-composer';
+@import 'parts/mobile-menu';
+@import 'parts/custom_class';

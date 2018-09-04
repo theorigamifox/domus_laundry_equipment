@@ -1,0 +1,32 @@
+*** Dry Cleaning WordPress Theme Changelog ***
+
+2017.06.06 - version 1.0
+ * First release! 
+
+2017.09.27 - version 1.1
+ * Compatible with wordpress 4.8.2 
+ * Updated plugins layer slider-6.5.8,Revolution slider-5.4.6 and eForm-4.0.1
+ * Fixed notice issues
+ * Compatible with PHP 7
+
+2018.06.11 - version 2.0
+
+ * Fix - Bulk plugins install issue
+ * Fix - Woocommerce outdated files
+ * Fix - Updated the no link menu issue
+ * Fix - Iphone sidebar issue
+ * Fix - Add target attribute for social media
+ * Fix - Sociable option 
+ * Fix - Option for change the site title color
+ * Fix - Unyson Page Builder Conflict
+ * Fix - Nav Menu Role Plugin compatible
+ * Fix - Added the smile fonts folder
+ * Fix - Woocommerce custom sidebar issue
+ * Updated demo contents
+ * Updated documentation
+ * Updated language files
+ * Updated all third party plugins
+ * Updated designthemes core features plugin
+ * Fix - All theme functions updated for child theme support
+ * Fix - Youtube and Vimeo video issue in https
+ * Fix - Twitter feeds links issue

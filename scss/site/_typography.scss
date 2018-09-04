@@ -1,0 +1,225 @@
+	body, h1, h2, h3, h4, h5, h6, a:hover, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:$primarycolor; }	
+
+body {
+    font-size: 16px;
+    font-family: $primaryfont;
+    color:$primarycolor;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: $primaryfont;
+    font-weight:normal;
+    line-height: 1.3;
+    color:$primarycolor;
+    margin:0 0 25px;
+     letter-spacing:0.5px;
+}
+h1 {
+    font-size: 28px;
+    line-height:36px;
+    @media #{$medium-down} {
+        font-size:24px;
+        line-height:32px;
+    }
+    @media #{$small-down} {
+        font-size:20px;
+        line-height:28px;
+    }
+}
+h2 {
+    font-size: 24px;
+    line-height:32px;
+    @media #{$medium-down} {
+        font-size:20px;
+        line-height:28px;
+    }
+    @media #{$small-down} {
+        font-size:18px;
+        line-height:26px;
+    }
+}
+h3 {
+    font-size:24px;
+    line-height:30px;
+    @media #{$medium-down} {
+        font-size:18px;
+        line-height:26px;
+    }
+    @media #{$small-down} {
+        font-size:20px;
+        line-height:26px;
+    }
+}
+h4 {
+    font-size: 16px;
+    margin: 0 0 $primary-spacing;
+    line-height:24px;
+    @media #{$medium-down} {
+
+    }
+    @media #{$small-down} {
+
+    }
+}
+h5 {
+    font-size: 16px;
+    line-height:24px;
+    @media #{$medium-down} {
+
+    }
+    @media #{$small-down} {
+
+    }
+}
+h6 {
+    font-size: 16px;
+    line-height:24px;
+    @media #{$medium-down} {
+
+    }
+    @media #{$small-down} {
+
+    }
+}
+p {
+    color: $primarycolor;
+    font-family: $primaryfont;
+    font-size: 16px;
+    margin: 0 0 15px;
+    padding: 0;
+    line-height: 24px;
+    text-align:left;
+    word-spacing:1px;
+    @media #{$medium-down} {
+        font-size:14px;
+        line-height:22px;
+    }
+    @media #{$small-down} {
+        font-size:14px;
+        line-height:20px;
+    }
+}
+a {
+    color:$primarycolor;
+    &:hover {
+        color:$secondarycolor;
+    }
+}
+ul.dt-sc-fancy-list {
+    li {
+        line-height: 24px;
+        @media #{$small-down} {
+            font-size:16px;
+            line-height:24px;
+        } 
+    }
+}
+time, .categories {
+    display:block;
+    color:$primarycolor;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 95%;
+    margin-bottom:5px;
+}
+a {
+    @include transition(0.5s, all, ease-in-out);
+    strong{
+        font-weight:normal;
+    }
+    &:hover {
+        text-decoration: none;
+        color:$secondarycolor;
+
+    }
+}
+
+.biggertext {
+    font-size:55px;
+    line-height:60px;
+    @media #{$medium-down} {
+        font-size:40px;
+        line-height:46px;
+    }
+    @media #{$small-down} {
+        font-size:30px;
+        line-height:36px;
+    }
+}
+.bigtext {
+    font-size:44px;
+    line-height:50px;
+    @media #{$medium-down} {
+        font-size:34px;
+        line-height:40px;
+    }
+    @media #{$small-down} {
+        font-size:24px;
+        line-height:30px;
+    }
+}
+#tinymce ul,
+#contentPage .content ul,
+#tinymce ol,
+#contentPage .content ol {
+    margin-bottom: 20px;
+}
+#tinymce li, #contentPage .content li {
+    line-height: 1.5em;
+    margin-left: 16px;
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+.green {color:$green;}
+.black {color:$black;}
+.white {color:$white;}
+
+#primary{
+    blockquote {
+        font-style: normal;
+        font-size:24px;
+        line-height:30px;
+        border-left:10px solid $secondarycolor;
+        padding-left:$primary-spacing;
+        margin-left:0;
+        p {
+            font-size:24px;
+            line-height:30px;
+        }
+    }
+}
+.telephone-list {
+    ul {
+        display:inline-block;
+        text-align:left;
+        width:100%;
+        li {
+            width:24%;
+            padding:0 25px 0 0;
+            display:inline-block;
+            text-align:center;
+            margin-bottom:50px;
+            font-size:24px;
+            letter-spacing:0.5px;
+            line-height:16px;
+            strong {
+                font-size:16px;
+                display:block;
+                color:$secondarycolor;
+                text-transform: uppercase;
+            }
+
+        }
+        @media #{$small-down} {
+            margin-bottom:$primary-spacing*2;
+            li {
+                width:100%;
+                margin-bottom:25px;
+                font-size:18px;
+                padding:0;
+                strong {
+                    font-size:14px;
+                }
+            }
+        }
+    }
+}

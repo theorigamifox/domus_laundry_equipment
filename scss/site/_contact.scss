@@ -1,0 +1,105 @@
+#contact-form {
+    padding-top:$primary-spacing*2;
+    @media #{$small-down} {
+        padding:0 25px;
+    }
+    .gform_wrapper {
+        h3.gform_title {
+            text-align:center;
+            font-family:$primaryfont;
+            color:$secondarycolor;
+            margin-bottom:15px;
+            text-transform:uppercase;
+            font-weight:normal;
+            font-size:40px;
+            @media #{$small-down} {
+                font-size:24px;
+                line-height:30px;
+            }
+        }
+        span.gform_description {
+            text-align:center;
+        }
+        li {
+            float:left;
+            width:33.3%;
+            padding-right:15px;
+            clear:none;
+            margin:0 0 10px;
+            &:nth-child(3){
+                float:right;
+                padding-right:0;
+            }
+            &:last-of-type {
+                width:100%;
+                padding-right:0;
+            }
+            input {
+                width:100%;
+            }
+            div.gfield_description {
+                text-align:center;
+                padding-bottom:15px;
+            }
+            @media #{$small-down} {
+                width:100%;
+                padding:0;
+            }
+        }
+        .gform_footer {
+            display:inline-block;
+            width:100%;
+            text-align:center;
+            input[type="submit"]{
+                font-family:$primaryfont;
+                padding:$primary-spacing $primary-spacing*2;
+                font-size:18px;
+                font-weight:normal;
+                text-transform:uppercase;
+                text-align:center;
+                display:inline-block;
+                float:none;
+                border:3px solid $white;
+                @include transition(0.5s, all, ease-in-out);
+                &:hover {
+                    color:$secondarycolor;
+                    border-color:$secondarycolor;
+                }
+            }
+        }
+    }
+}
+.dt-sc-contact-info.type8 {
+    min-height:225px;
+    @media #{$small-down} {
+        margin:0!important;
+        word-break:break-all;
+    }
+    h3 {
+        font-weight:normal;
+        font-size:20px;
+        font-family:$secondaryfont;
+        margin-bottom:10px;
+    }
+    p {
+        line-height:24px;
+        strong {
+            font-size:16px;
+        }
+    }
+}
+
+/*----*****---- << 1.17 - Contact Form 7 Validation >> ----*****----*/
+.wpcf7-form .wpcf7-not-valid { border-color:#ff0000 !important; }
+.wpcf7-form .wpcf7-not-valid-tip { display:none; }
+
+
+.wpcf7-form div.wpcf7-validation-errors, .wpcf7-form div.wpcf7-mail-sent-ok { clear: both; float: left; margin-left: 0; margin-right: 0; padding:15px 15px 15px 45px; width: 99%; box-sizing: border-box; }
+.wpcf7-form div.wpcf7-validation-errors { background-color:#ffcccc; border:1px solid #ff9999; color:#d01313; position:relative; }
+.wpcf7-form div.wpcf7-validation-errors:before, .wpcf7-form div.wpcf7-mail-sent-ok:before { top:15px; left:18px; font-family:FontAwesome; font-style:normal; font-weight:normal; text-decoration:inherit; font-size:20px; position:absolute; }
+.wpcf7-form div.wpcf7-validation-errors:before { content:"\f057"; color:#C54228; }
+
+.wpcf7-form div.wpcf7-mail-sent-ok { background-color:#eafac0; border:1px solid #b1cf67; color:#7ba411; position:relative; }
+.wpcf7-form div.wpcf7-mail-sent-ok:before { content:"\f058"; color:#75b632; }
+
+

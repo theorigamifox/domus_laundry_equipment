@@ -1,0 +1,143 @@
+/* Table of Content
+==================================================
+	1.0  -  Custom Class
+	2.0  -  Browser Fix
+	3.0  -  DT Responsive
+	4.0  -  Skin Colors*/
+
+	/*--------------------------------------------------------------
+	1.0 - Custom Class
+	--------------------------------------------------------------*/
+	
+	.title_uppercase { text-transform:uppercase; }
+	.title_bold { font-weight:bold; }
+	
+	.extend-bg-fullwidth-left:after { content:""; position:absolute; top:0px; right:100%; height:100%; width: 100%; display:inline !important; }
+	.extend-bg-fullwidth-right:after { content:""; position:absolute; top:0px; left:100%; height:100%; width: 100%; display:inline !important; }
+	
+	.extend-bg-fullwidth-left:after, .extend-bg-fullwidth-right:after { background:#f5f5f5; }
+	
+
+
+	/*----*****---- << Vc Column custom class >> --****--*/
+	.rs_no-padding_column.wpb_column, .vc_col-md-12.wpb_column.rs_no-padding_column { margin-top: -1px; padding-bottom: 0; margin-bottom:0; } /* http://prntscr.com/dydqdv */
+	
+	.light-overlay:before { background:rgba(255, 255, 255, 0.8); } /* http://prntscr.com/dydsrd  = Model Home page contact section */
+	.dark-overlay:before { background:rgba(0, 0, 0, 0.8);  }
+	
+	.vc_parallax-opacity .upb_row_bg:before, .vc_parallax-opacity:before { position: absolute; content: ""; left: 0; top: 0; width: 100%; height: 100%; display: block; }
+
+	/*----*****---- << Gray Scale >> --****--*/ /* http://prntscr.com/dydr06 = Hotel Our Firm Page */
+	.gray-scale:hover, .gray-scale:hover img { -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -ms-filter: grayscale(1); -o-filter: grayscale(1); filter: grayscale(1); -webkit-transition-property: -webkit-filter; -moz-transition-property: -moz-filter; -ms-transition-property: -ms-filter; -o-transition-property: -o-filter; transition-property: filter; -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -ms-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; }
+	
+
+
+	/*----*****---- << Text with icon >> --****--*/ /* http://prntscr.com/dydrax = Fitness Home Page */
+	.dt-sc-text-with-icon { width:100%; clear:both; float:left; font-weight:bold; padding:12px 0px 12px 20px; }
+	.dt-sc-text-with-icon span { font-size:18px; margin:0px 7px 0px 0px; position:relative; top:2px; font-weight:bold; }
+	
+	.dt-sc-text-with-icon.border-bottom { border-bottom:1px solid; }
+	.dt-sc-text-with-icon.border-right { border-right:1px solid; }
+
+	
+	h2.dt-sc-title-inline { display: inline-block; margin-right: 30px; }
+	
+
+	
+
+
+	/*----*****---- << Spa rounded corner image >> --****--*/ /* http://prntscr.com/dydylt = Spa */
+	.dt-sc-partially-rounded-alt { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+	
+	.vc_min_height_right.wpb_column.vc_col-sm-6 { margin-left: 30px; width: calc(50% - 30px); } /* http://prntscr.com/e0ka7y *
+	
+
+	/*----*****---- << Image Caption With Counter >> --****--*/	 /* http://prntscr.com/dydzek = Image caption counter */
+	.dt-sc-image-caption-with-counter { counter-reset:image-caption-counter; }
+	.dt-sc-image-caption-with-counter h3 { counter-increment:image-caption-counter; }
+	.dt-sc-image-caption-with-counter h3:before { content:counter(image-caption-counter, decimal-leading-zero); font-size:36px; font-weight:600; border-bottom:2px solid; float:left; margin:-10px 20px 0px 0px; padding:0px; }
+	.dt-sc-image-caption-with-counter h3:before { font-family:'Open Sans', sans-serif; }
+	
+	
+	.dt-sc-contact-details-on-map .dt-sc-map-overlay h3, .dt-sc-contact-details-on-map .map-switch-icon, .dt-sc-contact-details-on-map .map-switch-icon:hover { color:#ffffff; }	
+	.dt-sc-contact-details-on-map .map-switch-icon:hover { background:#000000; } /* http://prntscr.com/dydzs2 = Restaurant */
+	
+	.vc_img-width-assign img { width: 200px; }
+	.dt-sc-skin-txt.alter {  color: inherit; }
+
+	/*--------------------------------------------------------------
+	2.0 - Browser Fix
+	--------------------------------------------------------------*/
+	/* IE9 and above override */	
+	@media screen and (min-width:0\0) { 
+			
+		.dt-sc-contact-details-on-map .dt-sc-map-overlay { padding: 71px 0 0; }
+		
+	}
+	
+	/* IE9 only override */	
+	.ie9 .dt-sc-contact-details-on-map .dt-sc-map-overlay { padding: 72px 0 0; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	3.0 - DT Responsive
+	--------------------------------------------------------------*/
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		
+		/*----*****---- << Hosting >> ----*****----*/
+		.hosting-contact-info-container .dt-sc-contact-info.type7 span { left:10px; }
+		
+		/*----*****---- << Restaurant >> ----*****----*/
+		.dt-sc-contact-details-on-map .dt-sc-map-overlay { padding: 72px 0 0; }
+		
+		/*----*****---- << Miscellaneous >> ----*****----*/
+		.dt-sc-text-with-icon { font-size: 13px; }
+	
+	}
+	
+	
+	 /* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		.dt-sc-text-with-icon { font-size: 11px; }
+		
+		.vc_row.vc_row-no-padding .dt-sc-map-overlay .wpb_column.vc_col-sm-3 { padding-left: 5px; padding-right: 5px; }
+		.vc_row.vc_row-no-padding .dt-sc-map-overlay .wpb_column.vc_col-sm-3 .dt-sc-contact-info.type3 { font-size: 13px; padding-left: 10px; padding-right: 10px; }
+		.vc_row.vc_row-no-padding .dt-sc-map-overlay .wpb_column.vc_col-sm-3 .dt-sc-contact-info.type3 h6 { font-size: 15px; }
+	
+		.dt-sc-contact-details-on-map .dt-sc-map-overlay { padding: 76px 0 0; }	
+		
+		.rs_line_height p { line-height:normal !important; }
+		
+		
+		/*----*****---- << Event >> ----*****----*/
+		.dt-sc-content-with-hexagon-shape { margin-left:16%; }
+		.event-colored-box { margin-top:0; }
+		.event-contact-info { margin-left:25%; }
+		
+		/*----*****---- << Architecture >> ----*****----*/
+		.column.wpb_column.dt-sc-one-fifth.vc_col-md-4 { width:32%; margin-bottom:20px; min-height:290px; }
+		.column.wpb_column.dt-sc-one-fifth.vc_col-md-4:nth-child(4), .column.wpb_column.dt-sc-one-fifth.vc_col-md-4:nth-child(10) { margin-left:0; }
+		
+	}
+	
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+
+		
+		.extend-bg-fullwidth-left::after { content:none; }
+		
+		
+		/*----*****---- << Custom Class >> ----*****----*/
+		.rs_col_no_btm_space .wpb_column, .rs_col_no_btm_space.wpb_column, 
+		.rs_negative-margin_override.vc_row { margin-left:0 !important; }
+					
+		.rs_padding_override_zero.vc_row,
+		.rs_padding_override_zero.wpb_column .vc_column-inner { padding-left: 0 !important; padding-right: 0 !important; }
+		
+	}

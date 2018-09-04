@@ -1,0 +1,46 @@
+#primary {
+    .um {
+        .um-field-label {
+            color:$white;
+        }
+        input[type="submit"].um-button {
+            background:$primarycolor;
+            border:2px solid $primarycolor!important;
+            &:hover {
+                border:2px solid $primarycolor!important;
+                background:$secondarycolor;
+                color:$white;
+            }
+        }
+    }
+
+    .um-profile.um {
+        .um-name {
+            color:$white;
+            a {
+                color:$white;
+            }
+        }
+    }
+    .um-account-main {
+        div.um-account-heading {
+            color:$white;
+        }
+    }
+    .um-account-side {
+        .um-account-name {
+            a {
+                color:$white;
+            }
+        }
+    }
+}
+.um-page-login {
+    #primary {
+        .entry-content {
+            max-width:450px;
+            margin:0 auto;
+            color:$white;
+        }
+    }
+}
