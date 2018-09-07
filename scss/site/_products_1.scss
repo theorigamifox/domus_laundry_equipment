@@ -2,6 +2,7 @@
     #product-listing {
         background:$white;
         padding:$primary-spacing*2 0;
+        border-top:7px solid $primarycolor;
         h2 {
             color:$secondarycolor;
             text-align:center;
@@ -85,9 +86,6 @@
                     width:100%;
                     margin-bottom:$primary-spacing;
                 }
-                & > li {
-                    margin-bottom:25px;
-                }
                 h3 {
                     display:inline-block;
                     width:100%;
@@ -102,7 +100,7 @@
                 }
                 li {
                     list-style:none;
-                    padding-bottom:0;
+                    margin-bottom:5px;
                     &:before {
                         content:">";
                         color:$primarycolor;
@@ -111,9 +109,9 @@
                     }
                     a {
                         display:block;
-                        color:$primarycolor;
+                        color:$textgrey;
                         &:hover {
-                            color:$secondarycolor;
+                            color:$primarycolor;
                         }
                     }
                 }
@@ -124,12 +122,12 @@
 .page-template-template-dealers { 
     #product-listing {
         .product-description {
-            width:100%!important;
+            width:85%!important;
             @media #{$medium-only} {
-                /*width:75%!important;*/
+                width:75%!important;
             }            
             @media #{$small-down} {
-                /*width:100%!important;*/
+                width:100%!important;
             }
             .product-titles {
                 width:100%;
@@ -251,7 +249,7 @@
         }
     }
     header#product-header {
-        background:$secondarycolor;
+        background:$lightgrey;
         padding:$primary-spacing*2 0;
         .columns {
             position:relative;

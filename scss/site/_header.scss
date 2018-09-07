@@ -26,9 +26,17 @@ header#header {
                     & > li {
                         a {
                             font-weight:normal;
-
                             &:hover {
                                 color:$secondarycolor!important;
+                            }
+                        } 
+                        & > ul {
+                            & > li {
+                                a {
+                                    &:hover {
+                                        color:$white!important;
+                                    }
+                                }
                             }
                         }
                     }

@@ -17,16 +17,33 @@
                 line-height:30px;
             }
         }
+        .ginput_complex {
+            .ginput_left,.ginput_right {
+                width:100%;
+                margin-right:0;
+                padding-right:0;
+            }
+        }
+        fieldset {
+            li:last-of-type {
+                width:50%;
+                ul.gfield_checkbox {
+                    li {
+                        width:100%;
+                    }
+                }
+            }
+        }
         span.gform_description {
             text-align:center;
         }
         li {
             float:left;
-            width:33.3%;
+            width:50%;
             padding-right:15px;
             clear:none;
             margin:0 0 10px;
-            &:nth-child(3){
+            &:nth-child(3), &:nth-child(4){
                 float:right;
                 padding-right:0;
             }

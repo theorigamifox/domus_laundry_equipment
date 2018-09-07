@@ -15,6 +15,7 @@ if (function_exists ('wp_get_theme')) :
 	define( 'DRY_CLEANING_THEME_NAME', $themeData->get('Name'));
 	define( 'DRY_CLEANING_THEME_VERSION', $themeData->get('Version'));
 endif;
+require_once( DRY_CLEANING_THEME_DIR .'/lib/custom-post-types.php' );
 
 /* ---------------------------------------------------------------------------
  * Loads Kirki

@@ -39,10 +39,15 @@
         .gform_wrapper {
             position:relative;
             margin-bottom:0!important;
+            .ginput_complex {
+                .ginput_left,.ginput_right {
+                    width:100%;
+                }
+            }
             ul.gform_fields {
                 li.gfield {
                     float:left;
-                    width:33%;
+                    width:25%;
                     clear:none;
                     margin-bottom:0;
                     &:last-of-type {

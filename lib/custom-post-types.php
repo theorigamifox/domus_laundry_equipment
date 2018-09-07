@@ -28,7 +28,7 @@ function products() {
     );
     register_post_type('product', $args);
 }
-
+add_action('init', 'products', 0);
 function product_range() {
     $labels = array(
         'name' => _x('Product Range', 'Taxonomy General Name'),
