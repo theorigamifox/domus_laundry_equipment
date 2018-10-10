@@ -46,7 +46,6 @@ if (!function_exists('dry_cleaning_enqueue_scripts')) {
 		}
 
 		wp_enqueue_script('dry-cleaning-jqplugins', get_theme_file_uri('/framework/js/jquery.plugins.js'), array(), null, true, true);
-		wp_enqueue_script('visualNav', get_theme_file_uri('/framework/js/jquery.visualNav.min.js'), array(), null, true, true);
 
 		if(class_exists('Tribe__Events__Pro__Main')) {
 			if(!tribe_is_photo()) {
@@ -130,7 +129,7 @@ if (!function_exists('dry_cleaning_enqueue_styles')) {
 		// wp_enqueue_style ---------------------------------------------------------------
 		wp_enqueue_style( 'dry-cleaning', get_stylesheet_uri(),  null, false );
 
-		wp_enqueue_style( 'dry-cleaning-base',		  get_theme_file_uri('/css/base.css'), false, null);
+//		wp_enqueue_style( 'dry-cleaning-base',		  get_theme_file_uri('/css/base.css'), false, null);
 
 
 		if (function_exists('bp_add_cover_image_inline_css')) {
@@ -138,21 +137,13 @@ if (!function_exists('dry_cleaning_enqueue_styles')) {
 			wp_add_inline_style( 'bp-parent-css', strip_tags( $inline_css['css_rules'] ) );
 		}
 
-		// icon fonts ---------------------------------------------------------------------
-		wp_enqueue_style ( 'custom-font-awesome',		get_theme_file_uri('/css/font-awesome.min.css'), array (), '4.3.0' );
-		wp_enqueue_style ( 'pe-icon-7-stroke',			get_theme_file_uri('/css/pe-icon-7-stroke.css'), array (), null );
-		wp_enqueue_style ( 'stroke-gap-icons-style',	get_theme_file_uri('/css/stroke-gap-icons-style.css'), array (),null );
-		wp_enqueue_style ( 'icon-moon',					get_theme_file_uri('/css/icon-moon.css'), array (), null );
-		wp_enqueue_style ( 'material-design-iconic',	get_theme_file_uri('/css/material-design-iconic-font.min.css'), array (), null );
-
-
 
 		// skin css
-		$use_predefined_skin = (int) get_theme_mod( 'use-predefined-skin', '1' );
-		if( !empty( $use_predefined_skin ) ) :
-			$skin = get_theme_mod( 'predefined-skin', dry_cleaning_defaults('predefined-skin') );
-			wp_enqueue_style("skin", 	get_theme_file_uri("/css/skins/$skin/style.css"), false, null);
-		endif;
+//		$use_predefined_skin = (int) get_theme_mod( 'use-predefined-skin', '1' );
+//		if( !empty( $use_predefined_skin ) ) :
+//			$skin = get_theme_mod( 'predefined-skin', dry_cleaning_defaults('predefined-skin') );
+//			wp_enqueue_style("skin", 	get_theme_file_uri("/css/skins/$skin/style.css"), false, null);
+//		endif;
 
 
 		// custom css ---------------------------------------------------------------------

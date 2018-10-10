@@ -11,6 +11,7 @@
 /* Assets */
 @import 'site/reset';
 @import 'site/style-editor';
+@import "site/base"; // Your site structure
 @import "site/structure"; // Your site structure
 @import 'site/navigation';
 @import 'site/header';
@@ -34,3 +35,9 @@
 @import 'parts/visual-composer';
 @import 'parts/mobile-menu';
 @import 'parts/custom_class';
+@import 'parts/peicons';
+@import 'parts/strokegapicons';
+//@import 'parts/iconmoon';
+//@import 'parts/material-design-iconic-font';
+
+@import 'plugins/fontawesome';

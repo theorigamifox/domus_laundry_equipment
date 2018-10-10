@@ -4,11 +4,21 @@
         <meta charset="<?php bloginfo('charset'); ?>">
         <?php dry_cleaning_viewport(); ?>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMCTBX4');</script>
+<!-- End Google Tag Manager -->
         <?php wp_head(); ?>
     </head>
 
     <body <?php body_class(); ?>>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMCTBX4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
         <?php
 // loading
         $loader = (int) get_theme_mod('use-site-loader', dry_cleaning_defaults('use-site-loader'));
@@ -124,7 +134,11 @@
                     </header><!-- **Header - End** -->
                 </div><!-- **Header Wrapper - End** -->
                     <section id="page-header">
-                        <?php the_post_thumbnail('full'); ?>
+                        <?php if (is_home() && get_option('page_for_posts') ) {
+    $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')),'full'); 
+    $featured_image = $img[0];
+    echo "<img src=" . $featured_image . ">";
+} else {  the_post_thumbnail('full');} ?>
                         <?php
                         $headline = get_field('header_headline');
                         $subtext = get_field('header_subtext');
@@ -166,12 +180,12 @@
                             $tpl_default_settings['enable-sub-title'] = 'true';
 
                         if ($tpl_default_settings['enable-sub-title'] == 'true'):
-                            require_once( DRY_CLEANING_THEME_DIR . '/headers/breadcrumb.php' );
+                            //require_once( DRY_CLEANING_THEME_DIR . '/headers/breadcrumb.php' );
                         endif;
 
 
                     else:
-                        require_once( DRY_CLEANING_THEME_DIR . '/headers/breadcrumb.php' );
+                        //require_once( DRY_CLEANING_THEME_DIR . '/headers/breadcrumb.php' );
                     endif;
 
                     $class = "container";
@@ -179,22 +193,6 @@
                         $class = ( $tpl_default_settings['layout'] == 'fullwidth' ) ? "portfolio-fullwidth-container" : "container";
                     }
 
-                    if (is_singular('tribe_events')) {
-                        $tpl_default_settings = get_post_meta($post->ID, '_custom_settings', TRUE);
-                        $tpl_default_settings = is_array($tpl_default_settings) ? $tpl_default_settings : array();
-                        $post_style = array_key_exists("event-post-style", $tpl_default_settings) ? $tpl_default_settings['event-post-style'] : "type1";
-                        switch ($post_style):
-                            case 'type2':
-                                $class = "event-type2-fullwidth";
-                                break;
-                            case 'type5':
-                                $class = "event-type5-fullwidth";
-                                break;
-                            default:
-                                $class = "container";
-                                break;
-                        endswitch;
-                    }
 
                     if (is_singular()) {
                         $tpl_default_settings = get_post_meta($post->ID, '_custom_settings', TRUE);

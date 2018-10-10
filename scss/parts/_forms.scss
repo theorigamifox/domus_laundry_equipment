@@ -224,6 +224,10 @@ input::-moz-focus-inner {
     color: #df7c7b;
     float: right;
 }
+p.form-submit {
+    clear:both;
+    float:none;
+}
 
 /* BROWSERS */
 .gform_wrapper.gf_browser_chrome {

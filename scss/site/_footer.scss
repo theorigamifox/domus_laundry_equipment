@@ -1,3 +1,61 @@
+#social-footer {
+    position:relative;
+    float:left;
+    width:100%;
+    background:#F7F7F7;
+    padding:50px 0;
+    h3 {
+        a {
+            color:$green;
+            &:hover {
+                color:$white;
+            }
+        }
+        @media #{$small-down} {
+            text-align:center;
+        }
+    }
+    @media #{$small-down} {
+        p {
+            display:inline-block;
+            text-align:center;
+            width:100%;
+        }
+    }
+    .button {
+        margin-top:15px;
+        display:inline-block;
+    }
+    .entry-share {
+        h4 {
+            text-align: right;
+            font-size:24px;
+            @media #{$small-down} {
+                text-align:center;
+            }
+        }
+        ul {
+            display:inline-block;
+            width:100%;
+            text-align:right;
+            @media #{$small-down} {
+                text-align:center;
+            }
+            li {
+                list-style:none;
+                display:inline-block;
+                margin:0 5px;
+                &:last-of-type {
+                    margin-right:0;
+                }
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+}
 .footer-copyright, .footer-copyright a {
     color:#FFF;
     font-family: $primaryfont;
@@ -333,6 +391,32 @@
     width:100%;
     padding:$primary-spacing*2 0;
     background:#24262b;
+    .social-links {
+        display:inline-block;
+        width:100%;
+        text-align:left;
+        @media #{$small-only}{
+            text-align:center;
+        }
+        li {
+            display:inline-block;
+            margin:0 10px 0 0;
+            a {
+                color:$white;
+                font-size:24px;
+                &:hover {
+                    color:$green;
+                }
+            }
+        }
+    }
+    @media #{$small-down} {
+        img {
+            display:block;
+            margin:0 auto;
+
+        }
+    }
     .menu {
         float:left;
         width:25%;
@@ -405,7 +489,7 @@
         line-height:22px;
     }
     .footer-menu:nth-child(3) .menu li {
-        text-align:right;
+        text-align:left;
     }
     .footer-menu:nth-child(4) .menu li {
         text-align: right;

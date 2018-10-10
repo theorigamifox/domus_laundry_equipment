@@ -18,14 +18,27 @@ $show_copyright_section = (int) get_theme_mod('show-copyright-text', dry_cleanin
     </div>
 
 <?php endif; ?>
-
+<footer id="social-footer">
+    <div class="container">
+        <div class="vc_col-sm-8">
+            <h3>Contact us on <a href="tel:02039689689">020 3968 9689</a></h3>
+            <p>Domus is part of a global group onnera who have been supplying commercial laundry products around the world since 1922.</p>
+            <p><a class="button" href="<?php bloginfo('url');?>/contact/">Contact Us</a></p>
+        </div>
+        <div class="vc_col-md-4 columns">
+            <?php get_template_part('parts/content','share');?>
+        </div>
+    </div>
+</footer>
 <div id="footer-menu">
     <div class="container">
+        <div class="vc_col-sm-3">
+            <a href="<?php bloginfo('url');?>"><img src="https://domuslaundryequipment.co.uk/wp-content/uploads/2018/08/logo-white-1.png" alt="<?php bloginfo('name');?>"></a>
+            <?php get_template_part('parts/content','social');?>
+        </div>
         <?php wp_nav_menu(array('theme_location' => 'footer_1', 'container_class' => 'footer-menu')); ?>
         <?php wp_nav_menu(array('theme_location' => 'footer_2', 'container_class' => 'footer-menu')); ?>
-        <?php wp_nav_menu(array('theme_location' => 'footer_3', 'container_class' => 'footer-menu')); ?>
-        <?php wp_nav_menu(array('theme_location' => 'footer_4', 'container_class' => 'footer-menu')); ?>
-        <?php //wp_nav_menu(array('theme_location' => 'footer_5', 'container_class' => 'footer-menu'));  ?>
+        <?php wp_nav_menu(array('theme_location' => 'footer_3', 'container_class' => 'footer-menu')); ?>        
     </div>
     <?php if ($address): ?>
         <div class="row">
@@ -34,6 +47,7 @@ $show_copyright_section = (int) get_theme_mod('show-copyright-text', dry_cleanin
     <?php endif; ?>
 </div>
 <!-- **Footer** -->
+
 <footer id="footer">
     <?php
     if (!empty($footer)) :

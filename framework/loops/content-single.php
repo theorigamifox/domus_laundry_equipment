@@ -31,14 +31,6 @@
 	<?php if( isset($post_meta['show-featured-image']) && $post_meta['show-featured-image'] == 'true' ):?>
 			<!-- Featured Image -->
 			<?php if( $format == "image" || empty($format) ) :
-					if( has_post_thumbnail() ) :?>
-						<div class="entry-thumb">
-							<a title="<?php printf(esc_attr__('Permalink to %s','dry-cleaning'),the_title_attribute('echo=0'));?>"><?php the_post_thumbnail("full");?></a>
-							<div class="entry-format <?php echo esc_attr($show_post_format);?>">
-								<a class="ico-format" href="<?php echo esc_url(get_post_format_link( $format ));?>"></a>
-							</div>
-						</div><?php
-					endif;
                    elseif( $format === "gallery" ) :
                    		if( $post_meta['post-gallery-items'] != '' ) :
                    			echo '<div class="entry-thumb">';
@@ -74,13 +66,6 @@
                             echo '		<a class="ico-format" href="'.esc_url(get_post_format_link( $format )).'"></a>';
                             echo '	</div>';
                             echo '</div>';
-                        elseif( has_post_thumbnail() ):?>
-                        	<div class="entry-thumb">
-                        		<a  title="<?php printf(esc_attr__('Permalink to %s','dry-cleaning'),the_title_attribute('echo=0'));?>"><?php the_post_thumbnail("full");?></a>
-                        		<div class="entry-format <?php echo esc_attr($show_post_format);?>">
-                        			<a class="ico-format" href="<?php echo esc_url(get_post_format_link( $format ));?>"></a>
-                                </div>
-                            </div><?php
                         endif;
                    elseif( $format === "audio" ) :
                    		if( $post_meta['media-url'] != '' ) :
@@ -94,23 +79,8 @@
 	                   		echo '		<a class="ico-format" href="'.esc_url(get_post_format_link( $format )).'"></a>';
 	                   		echo '	</div>';
 	                   		echo '</div>';
-	                   	elseif( has_post_thumbnail() ):?>
-	                   		<div class="entry-thumb">
-	                   			<a  title="<?php printf(esc_attr__('Permalink to %s','dry-cleaning'),the_title_attribute('echo=0'));?>"><?php the_post_thumbnail("full");?></a>
-	                   			<div class="entry-format <?php echo esc_attr($show_post_format);?>">
-	                   				<a class="ico-format" href="<?php echo esc_url(get_post_format_link( $format ));?>"></a>
-	                   			</div>
-	                   		</div><?php
                         endif;
                    else:
-                   		if( has_post_thumbnail() ) :?>
-                   			<div class="entry-thumb">
-                   				<a  title="<?php printf(esc_attr__('Permalink to %s','dry-cleaning'),the_title_attribute('echo=0'));?>"><?php the_post_thumbnail("full");?></a>
-                   				<div class="entry-format <?php echo esc_attr($show_post_format);?>">
-                   					<a class="ico-format" href="<?php echo esc_url(get_post_format_link( $format ));?>"></a>
-                   				</div>
-                   			</div><?php
-                   		endif;
                    	endif;?>
 			<!-- Featured Image -->
 	<?php endif;?>
@@ -140,11 +110,6 @@
 
 				<!-- Author & Category & Tag -->
 				<div class="entry-meta-data">
-					<p class="author <?php echo esc_attr( $show_author_meta );?>">
-						<i class="pe-icon pe-user"> </i>
-						<a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>" 
-							title="<?php esc_attr_e('View all posts by ', 'dry-cleaning'); echo get_the_author();?>"><?php echo get_the_author();?></a>
-					</p>
 
 					<?php the_tags("<p class='tags {$show_tag_meta}'> <i class='pe-icon pe-ticket'> </i>",', ',"</p>");?>
 
@@ -190,22 +155,9 @@
     <?php elseif( $post_style == "default"): ?>
                         		
             <div class="entry-details">
-            
-                    <div class="entry-meta">
-                        <!-- date -->
-                        <div class="date <?php echo esc_attr($show_date_meta);?>">
-                            <?php echo get_the_date('d').' / <span>'. get_the_date('M').'</span>';?>
-                        </div><!-- date -->
-                    </div>
-                    
-                    
+           
                     
                     <div class="entry-author-comment <?php echo esc_attr( $show_author_meta );?>">
-                        <p class="author">
-                            <?php esc_attr_e('By', 'dry-cleaning'); ?>
-                            <a href="<?php echo get_author_posts_url(get_the_author_meta('ID'));?>" 
-                            title="<?php esc_attr_e('View all posts by ', 'dry-cleaning'); echo get_the_author();?>"><?php echo get_the_author();?></a>
-                        </p>
                         
                         <div class="entry-body">
 							<?php the_content();?>

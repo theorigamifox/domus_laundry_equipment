@@ -82,6 +82,7 @@ require_once( DRY_CLEANING_THEME_DIR .'/framework/register-hooks.php' );
 
 // Likes ------------------------------------------------------------------------
 require_once( DRY_CLEANING_THEME_DIR .'/framework/register-likes.php' );
+require_once( DRY_CLEANING_THEME_DIR .'/lib/options.php' );
 
 // Widgets ----------------------------------------------------------------------
 add_action( 'widgets_init', 'dry_cleaning_widgets_init' );

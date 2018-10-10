@@ -165,7 +165,21 @@ blockquote.aligncenter { text-align:center; }
 .page-link > span { border:1px solid rgba(0, 0, 0, 0.5); color:#ffffff; font-weight:bold; line-height:normal; padding:7px 13px 5px; float:left; margin-right:10px; }
 .page-link a:hover span { color:#ffffff; }
 
-
+.button {
+    background:$green;
+    color:$white;
+    border: 3px solid $green;
+    @include transition(0.5s, all, ease-in-out);
+    padding:15px 25px;
+    text-transform:uppercase;
+    font-weight:bold;
+    border-radius:3px;
+    &:hover {
+        background:$white;
+        color:$green;
+        border-color:$green!important;
+    }
+}
 
 /*--------------------------------------------------------------
 1.6 - Tables
